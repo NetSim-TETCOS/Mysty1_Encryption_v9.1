@@ -1,0 +1,69 @@
+﻿Build started 27-02-2017 11:58:31.
+     1>Project "C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Application\Application.vcxproj" on node 2 (rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+         Creating directory "..\Dll\".
+     1>InitializeBuildStatus:
+         Creating "Debug\Application.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Include /I..\Application /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D APPLICATION_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt aes.c aes_run.c Application.c Database_FTP_Custom.c des.c des_run.c Distribution.c Emulation_application.c Encryption.c misty1.c misty_run.c RandomNumber.c
+         RandomNumber.c
+         misty_run.c
+     1>c:\users\upal\desktop\file exchange updates\v9.1\mysty1_encryption\application\misty_run.c(20): warning C4013: 'misty1_main' undefined; assuming extern returning int
+     1>c:\users\upal\desktop\file exchange updates\v9.1\mysty1_encryption\application\misty_run.c(13): warning C4101: 'key' : unreferenced local variable
+         misty1.c
+         Encryption.c
+         Emulation_application.c
+         Distribution.c
+         des_run.c
+         des.c
+         Database_FTP_Custom.c
+         Application.c
+     1>c:\users\upal\desktop\file exchange updates\v9.1\mysty1_encryption\application\application.c(581): warning C4013: 'xor_encrypt' undefined; assuming extern returning int
+     1>c:\users\upal\desktop\file exchange updates\v9.1\mysty1_encryption\application\application.c(587): warning C4013: 'encryptBlock' undefined; assuming extern returning int
+     1>c:\users\upal\desktop\file exchange updates\v9.1\mysty1_encryption\application\application.c(589): warning C4013: 'misty_run' undefined; assuming extern returning int
+     1>c:\users\upal\desktop\file exchange updates\v9.1\mysty1_encryption\application\application.c(592): warning C4013: 'des' undefined; assuming extern returning int
+         aes_run.c
+         aes.c
+         Generating Code...
+     1>c:\users\upal\desktop\file exchange updates\v9.1\mysty1_encryption\application\misty1.c(337): warning C4716: 'misty1_main' : must return a value
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Application\..\Dll\Application.dll) does not match the Linker's OutputFile property value (C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\libApplication.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(Application) does not match the Linker's OutputFile property value (libApplication). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Dll\libApplication.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Application.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\Application.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Dll\Application.lib" /MACHINE:X86 /DLL Debug\aes.obj
+         Debug\aes_run.obj
+         Debug\Application.obj
+         Debug\Database_FTP_Custom.obj
+         Debug\des.obj
+         Debug\des_run.obj
+         Debug\Distribution.obj
+         Debug\Emulation_application.obj
+         Debug\Encryption.obj
+         Debug\misty1.obj
+         Debug\misty_run.obj
+         Debug\RandomNumber.obj Application.lib NetworkStack.lib Metrics.lib 
+     1>aes.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         Application.lib(libApplication.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+     1>aes.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+            Creating library ..\Dll\Application.lib and object ..\Dll\Application.exp
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+         Finished generating code
+     1>Application.lib(libApplication.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Application.lib(libApplication.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+     1>Application.lib(ErlangCall.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Application.lib(ErlangCall.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+     1>Application.lib(HTTP.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Application.lib(HTTP.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+     1>Application.lib(P2P.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Application.lib(P2P.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+     1>Application.lib(Email.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Application.lib(Email.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+     1>Application.lib(Voice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Application.lib(Voice.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+     1>Application.lib(Video.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Application.lib(Video.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+     1>list.lib(List.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'list.lib(List.obj)' or at 'C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Dll\vc100.pdb'; linking object as if no debug info
+         Application.vcxproj -> C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Application\..\Dll\Application.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\Dll\libApplication.dll;#2" /manifest Debug\Application.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Application.unsuccessfulbuild".
+         Touching "Debug\Application.lastbuildstate".
+     1>Done Building Project "C:\Users\UPAL\Desktop\File Exchange Updates\v9.1\Mysty1_Encryption\Application\Application.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.92
